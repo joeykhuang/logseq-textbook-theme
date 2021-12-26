@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* ****************************
-************** Root ***********
-*******************************/
 :root {
   --ls-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
     "Segoe UI Emoji", "Segoe UI Symbol";
@@ -11,9 +8,6 @@
   --ls-page-title-size: 36px;
 }
 
-/* *****************************
-********* White Theme ***********
-*******************************/
 .white-theme,
 html[data-theme=light] {
   --ls-primary-background-color: #fff;
@@ -57,10 +51,45 @@ html[data-theme=light] {
   --ls-block-bullet-active-color: #6ea7eead;
 }
 
-/*****************************************
-  This section is for global layout
-  DO NOTHING TO COLOR DESIGN
-*****************************************/
+
+.white-theme .cp__header {
+  color: var(--ls-primary-text-color);
+}
+.white-theme .cp__header a:hover {
+  background-color: #f1f1f1;
+}
+.white-theme #left-bar nav > a,
+.white-theme #left-bar svg {
+  color: var(--ls-priamary-text-color);
+}
+.white-theme #left-bar #repo-name {
+  opacity: 1;
+  height: 22px;
+  transform: translateY(-1px);
+}
+
+.white-theme .content .external-link {
+  border-bottom: 0.05em solid rgba(55, 53, 47, 0.25);
+}
+.white-theme .content .marker-switch {
+  color: #504d47;
+  background: #f3f2ed;
+  opacity: 1;
+}
+.white-theme .content .marker-switch:hover {
+  opacity: 0.7;
+}
+.white-theme .content table th {
+  background-color: #efefef;
+}
+.white-theme .cp__right-sidebar .sidebar-item-list {
+  background-color: var(--ls-secondary-background-color, #d8e1e8);
+}
+.white-theme .cp__right-sidebar .sidebar-item-list .sidebar-item {
+  background-color: var(--ls-secondary-background-color, #d8e1e8);
+  border-bottom: 2px solid #e6e6e6;
+}
+
 .cp__sidebar-main-content {
   max-width: 100% !important;
 }
@@ -176,9 +205,6 @@ a.tag[data-ref="Related" i] {
 }
 
 
-/*****************************************
-  Common Theme
-*****************************************/
 .cp__header a {
   color: var(--ls-primary-text-color);
 }
@@ -345,9 +371,6 @@ html ::-webkit-scrollbar-thumb:hover {
   border: 4px solid transparent;
 }
 
-/******************************************
- **************  Content  *****************
- ******************************************/
 .content hr {
   margin: 0.1rem 0;
 }
@@ -524,50 +547,6 @@ svg.add-button > .circle {
   font-weight: bolder;
 }
 
-/*****************************************
-  White Theme
-*****************************************/
-.white-theme .cp__header {
-  color: var(--ls-primary-text-color);
-}
-.white-theme .cp__header a:hover {
-  background-color: #f1f1f1;
-}
-.white-theme #left-bar nav > a,
-.white-theme #left-bar svg {
-  color: var(--ls-priamary-text-color);
-}
-.white-theme #left-bar #repo-name {
-  opacity: 1;
-  height: 22px;
-  transform: translateY(-1px);
-}
-
-.white-theme .content .external-link {
-  border-bottom: 0.05em solid rgba(55, 53, 47, 0.25);
-}
-.white-theme .content .marker-switch {
-  color: #504d47;
-  background: #f3f2ed;
-  opacity: 1;
-}
-.white-theme .content .marker-switch:hover {
-  opacity: 0.7;
-}
-.white-theme .content table th {
-  background-color: #efefef;
-}
-.white-theme .cp__right-sidebar .sidebar-item-list {
-  background-color: var(--ls-secondary-background-color, #d8e1e8);
-}
-.white-theme .cp__right-sidebar .sidebar-item-list .sidebar-item {
-  background-color: var(--ls-secondary-background-color, #d8e1e8);
-  border-bottom: 2px solid #e6e6e6;
-}
-
-/*****************************************
-  Code Mirror
-*****************************************/
 .cm-s-solarized,
 .cm-s-solarized.cm-s-dark {
   background-color: var(--ls-codeblock-background-color);
