@@ -1,0 +1,17 @@
+{
+    "name": "Textbook Themes",
+    "version": "0.0.1",
+    "author": "joeykhuang",
+    "description": "Textbook theme for Logseq",
+    "logseq":
+    {
+        "themes":
+        [
+            {
+                "description": "Textbook theme",
+                "name": "Textbook theme",
+                "url": "./custom.css"
+            }
+        ]
+    }
+}
